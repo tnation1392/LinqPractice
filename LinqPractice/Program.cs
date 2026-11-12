@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 
-GenLinqPractice.Run();
+
+IEnumPractice.Run();
 
 

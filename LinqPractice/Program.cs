@@ -2,6 +2,6 @@
 using System.Linq;
 
 
-lambda.Run();
+WherePractice.Run();
 
 

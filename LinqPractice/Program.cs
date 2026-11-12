@@ -1,6 +1,7 @@
-﻿using System.Linq;
+﻿using LinqPractice;
+using System.Linq;
 
 
-IEnumPractice.Run();
+lambda.Run();
 
 

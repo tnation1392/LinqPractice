@@ -2,6 +2,6 @@
 using System.Linq;
 
 
-WherePractice.Run();
+SelectPractice.Run();
 
 

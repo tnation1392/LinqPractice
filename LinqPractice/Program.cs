@@ -2,6 +2,6 @@
 using System.Linq;
 
 
-FirstorDefault.Run();
+Singleprac.Run();
 
 

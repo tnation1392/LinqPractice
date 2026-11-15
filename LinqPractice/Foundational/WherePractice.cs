@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace LinqPractice
+namespace LinqPractice.Foundational
 {
     public class TestResult
     {

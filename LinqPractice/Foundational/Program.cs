@@ -1,4 +1,4 @@
-﻿using LinqPractice;
+﻿using LinqPractice.Foundational;
 using System.Linq;
 
 

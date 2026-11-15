@@ -2,6 +2,6 @@
 using System.Linq;
 
 
-Count.Run();
+All.Run();
 
 

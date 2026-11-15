@@ -15,7 +15,7 @@ namespace LinqPractice.WorkonObj
         public int YearsOfService { get; set; }
     }
 
-    internal class ObjectCollections
+        public class ObjectCollections
     {
         public static void Run()
         {
@@ -42,7 +42,7 @@ namespace LinqPractice.WorkonObj
                     Name = "Casey",
                     Department = "Management",
                     YearsOfService = 7
-                }
+                },
                 new Employee
                 {
                     Id = 4,
@@ -57,7 +57,7 @@ namespace LinqPractice.WorkonObj
             foreach (var employee in technicianEmployees)
             {
                 Console.WriteLine($"Id: {employee.Id}, Name: {employee.Name}, Department: {employee.Department}, Years of Service: {employee.YearsOfService}");
-            })
+            }
 
         }
     }

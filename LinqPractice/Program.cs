@@ -1,8 +1,9 @@
 ﻿using LinqPractice.Foundational;
 using System.Linq;
 using LinqPractice.WorkonObj;
+using LinqPractice.Advanced;
 
 
-Aggregating.Run();
+ToDict.Run();
 
 

@@ -3,6 +3,6 @@ using System.Linq;
 using LinqPractice.WorkonObj;
 
 
-AnonTypes.Run();
+Aggregating.Run();
 
 

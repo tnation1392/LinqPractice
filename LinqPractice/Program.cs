@@ -2,8 +2,9 @@
 using System.Linq;
 using LinqPractice.WorkonObj;
 using LinqPractice.Advanced;
+using LinqPractice.QAAutomation;
 
 
-Aggregate.Run();
+FailReport.Run();
 
 

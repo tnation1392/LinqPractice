@@ -4,6 +4,6 @@ using LinqPractice.WorkonObj;
 using LinqPractice.Advanced;
 
 
-ToDict.Run();
+Join.Run();
 
 

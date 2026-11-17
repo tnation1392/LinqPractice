@@ -4,6 +4,6 @@ using LinqPractice.WorkonObj;
 using LinqPractice.Advanced;
 
 
-Join.Run();
+SelectMany.Run();
 
 

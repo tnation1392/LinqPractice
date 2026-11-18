@@ -5,6 +5,6 @@ using LinqPractice.Advanced;
 using LinqPractice.QAAutomation;
 
 
-FailReport.Run();
+LogAnalysis.Run();
 
 

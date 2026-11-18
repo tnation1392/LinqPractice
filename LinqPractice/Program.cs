@@ -5,6 +5,6 @@ using LinqPractice.Advanced;
 using LinqPractice.QAAutomation;
 
 
-LogAnalysis.Run();
+Duplicates.Run();
 
 

@@ -74,6 +74,16 @@ namespace LinqPractice.Project
                 .OrderByDescending(f => f.Count())
                 .First();
             Console.WriteLine($"\nHighest Risk Feature: {highestRiskFeature.Key}");
+
+            //Average Execution Time
+            double averageExecutionTime = TestResults.Average(t => t.ExecutionTime);
+            Console.WriteLine($"\nAverage Execution Time: {averageExecutionTime:F2} seconds");
+
+            //Slowest Execution Time
+            var slowestTest = TestResults
+                .OrderByDescending(t => t.ExecutionTime)
+                .First();
+            Console.WriteLine($"\nSlowest Test: {slowestTest.TestName} ({slowestTest.ExecutionTime} seconds)");
         }
     }
 }

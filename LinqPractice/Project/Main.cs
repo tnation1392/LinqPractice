@@ -33,12 +33,47 @@ namespace LinqPractice.Project
 
             //Finding Passed Tests
             int passedTests = TestResults.Count(t => t.Passed);
-            Console.WriteLine($"Passed Tests: {passedTests}");
+            Console.WriteLine($"\nPassed Tests: {passedTests}");
 
             //Finding Failed Tests
             int failedTests = TestResults.Count(t => !t.Passed);
-            Console.WriteLine($"Failed Tests: {failedTests}");
+            Console.WriteLine($"\nFailed Tests: {failedTests}");
            
+            //Pass Rate
+            double passRate = (double)passedTests / totalTests * 100;
+            Console.WriteLine($"\nPass Rate: {passRate}%");
+
+            //Failed Test List
+            var failures = TestResults
+                .Where(t => !t.Passed)
+                .Select(t => t.TestName)
+                .ToList();
+
+            foreach (var failure in failures)
+            {
+                Console.WriteLine($"\nFailed Test: {failure}");
+            }
+
+            //Failures by Feature
+            var failuresByFeature = TestResults
+                .Where(t => !t.Passed)
+                .GroupBy(t => t.Feature)
+                .Select(g => new { Feature = g.Key, Count = g.Count() })
+                .ToList();
+
+            Console.WriteLine($"\nFailures by Feature:");
+            foreach (var failure in failuresByFeature)
+            {
+                Console.WriteLine($"  {failure.Feature}: {failure.Count}");
+            }
+
+            //Highest Risk Feature
+            var highestRiskFeature = failuresByFeature
+                .Where(f => f.Count > 0)
+                .GroupBy(f => f.Feature)
+                .OrderByDescending(f => f.Count())
+                .First();
+            Console.WriteLine($"\nHighest Risk Feature: {highestRiskFeature.Key}");
         }
     }
 }
